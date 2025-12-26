@@ -1,0 +1,189 @@
+/* Global font */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* App root and mobile frame */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.mobile-frame {
+  width: 375px;
+  height: 812px;
+  background: #F7F8F9;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+  overflow: auto;
+  border: 1px solid #e7e8e9;
+}
+
+/* Page spacing */
+.page {
+  padding: 20px;
+}
+
+/* Headings and text */
+.main-heading {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;          /* medium = 500 */
+  font-size: 28px;
+  line-height: 17px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 1;
+}
+
+.secondary-text {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;          /* normal = 400 */
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+/* Welcome page specifics */
+.welcome {
+  position: relative;
+  background: #F7F8F9;
+  height: 100%;
+}
+
+.welcome .content-bottom {
+  position: absolute;
+  left: 20px;
+  /* anchor from bottom to avoid clipping when overflow is hidden */
+  bottom: 72px;
+}
+
+.welcome .main-heading {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1D2226;
+  margin: 0;
+}
+
+.welcome .secondary-text {
+  margin-top: 10px;
+}
+
+.desc-text {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;          /* normal = 400 */
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Rubik", sans-serif;
+
+  letter-spacing: 0px;
+  color: #1D2226;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+/* Header styling for account page */
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03);
+  z-index: 10;
+}
+
+/* Mobile adjustments to match spacing */
+.page .main-heading {
+  margin-top: 40px;
+  width: 188px;
+  height: 69px;
+
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;        /* medium */
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Rubik", sans-serif;
+
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 1;
+} 
+
+
+.page .secondary-text{
+
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;          /* normal = 400 */
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Rubik", sans-serif;
+  margin-top: 14px;
+  letter-spacing: 0px;
+  color: #1D2226;
+  opacity: 0.6;
+}
+
+.page .inputdiv{
+    margin-top: 33px;
+    margin-bottom: 10px;
+}
+
+.radio-options{
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;          /* normal = 400 */
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Rubik", sans-serif;
+
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-top: 90px;
+}
+
+
+
+.page.register .fixed-btn {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 736px;
+  display: flex;
+  justify-content: center;
+}
+
+.page.register .fixed-btn .btn {
+  width: 335px; 
+}
+
+/* Account page: bottom dashed hr */
+.page.account {
+  position: relative;
+}
+
+.page.account .bottom-hr {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 782px;
+  border: none;
+  border-top: 1px dashed #e0e0e0;
+  margin: 0;
+}

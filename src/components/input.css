@@ -1,0 +1,98 @@
+/* Labeled input */
+.inp-wrap {
+  position: relative;
+  margin-top: 29px;
+}
+
+.inp-label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background: #F7F8F9;
+  padding: 0 6px;
+  display: inline-block;
+  font-size: 13px;
+  color: #6C25FF;
+}
+
+.req {
+  color: #EC3A3A;
+  margin-left: 4px;
+}
+
+.inp-field {
+  width: 335px;
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #CBCBCB;
+  background: #F7F8F9;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #1D2226;
+}
+
+.inp-field::placeholder {
+  color: #BDBDBD;
+}
+
+.inp-field:focus {
+  outline: none;
+  border-color: #6C25FF;
+  box-shadow: 0 4px 12px rgba(108, 37, 255, 0.08);
+}
+
+/* Radio group for 'Are you an Agency?' */
+.radio-group .radio-heading {
+  font-size: 13px;
+  line-height: 17px;
+  color: #1D2226;
+}
+.radio-group .req{ color:#EC3A3A; margin-left:6px }
+.radio-options {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.radio-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #CBCBCB;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+.radio-custom::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6C25FF;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 120ms ease-in-out;
+}
+.radio-option input[type="radio"]:checked + .radio-custom::after,
+.radio-option.checked .radio-custom::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.radio-option.checked .radio-custom {
+  border-color: #6C25FF;
+}
+.radio-text { font-size: 14px; color: #1D2226; }
